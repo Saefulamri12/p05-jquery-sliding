@@ -1,95 +1,182 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>index web server</title>
-    <style type="text/css">
-        body{
-            background-color: rgb(183, 247, 255);
-            text-align: center;
-        }
-        table, th, td{
-            border: 1px solid black;
-            border-radius: 5px;
-        }
-        table{
-            border: transparent;
-        }
-        td{
-            background-color: rgb(71, 218, 255);
-            color: white;
-        }
-        th, td{
-            padding-top: 10px;
-            padding-bottom: 10px;
-            padding-left: 30px;
-            padding-right: 40px;
-        }
-        table tbody tr:hover td{
-            background-color: rgb(249, 66, 255);
-            border-color:black;
-            transition: all .3s;
-        }
-    </style>
-</head>
-<body>  
-    <table style="margin-left: auto;margin-right: auto;">
-     <tbody>
-         <P>Hello World PHP</P>
-         <pre>Nama : Saeful Amri</pre>
-         <pre> NIM : 41215479</pre>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-        <tr>
-            <th colspan="6" bgcolor="lightgray">My 5 Besty</th>
-        </tr>    
-        <tr>
-            <td>No</td>
-            <td>Nim</td>
-            <td>Nama</td>
-            <td>Alamat</td>
-            <td colspan="2">Aksi</td>
-        </tr>
-        <tr id="baris__1">
-            <td align="center">1</td>
-            <td class="data" id="nim__1">41215601</td>
-            <td class="data" id="nama_mhs__1">Juliyanti</td>
-            <td class="data" id="alamat__1">Bandung</td>
-            <td class="data tengah" id=hapus__1>Hapus</td>  
-        </tr>
-        <tr id="baris__2">
-            <td align="center">2</td>
-            <td class="data" id="nim__2">41215479</td>
-            <td class="data" id="nama_mhs__2">Saeful amri</td>
-            <td class="data" id="alamat__2">Brebes</td>
-            <td class="data tengah" id=hapus__2>Hapus</td>
-        </tr>
-        <tr id="baris__3">
-            <td align="center">3</td>
-            <td class="data" id="nim__3">41215844</td>
-            <td class="data" id="nama_mhs__3">Aziz Chairul Imam</td>
-            <td class="data" id="alamat__3">Palimanan</td>
-            <td class="data tengah" id=hapus__3>Hapus</td>
-        </tr>
-        <tr id="baris__4">
-            <td align="center">4</td>
-            <td class="data" id="nim__4">41215634</td>
-            <td class="data" id="nama_mhs__4">fathur rohman</td>
-            <td class="data" id="alamat__4">Arjawinangun</td>
-            <td class="data tengah" id=hapus__4>Hapus</td>
-        </tr>
-        <tr id="baris__5">
-            <td align="center">5</td>
-            <td class="data" id="nim__5">41215562</td>
-            <td class="data" id="nama_mhs__5">Muhammad Daffa</td>
-            <td class="data" id="alamat__5">Brebes</td>
-            <td class="data tengah" id=hapus__5>Hapus</td>
-        </tr>
-      </tbody>
-    </table>
-    <br>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="script.js"></script>
-</body>
-<html>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+     
+    <!-- Bosstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
+    <!-- My CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+    <title>My portfolio | Saeful amri</title>
+  </head>
+  <body id="home">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm">
+      <div class="container">
+        <a class="navbar-brand" href="#">Saeful amri</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Akhir Navbar -->
+
+    <!-- Jumbotron -->
+    <section class="jumbotron text-center">
+      <img src="img/Saeful.jpg" alt="saeful amri" width="200" class="rounded-circle img-thumbnail" />
+      <h1 class="display-4">Saeful Amri</h1>
+      <p class="lead">I am a student of STIMIK IKMI CIREBON | And Mobile legend creator content</p>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#ffffff"
+          fill-opacity="1"
+          d="M0,192L60,192C120,192,240,192,360,213.3C480,235,600,277,720,245.3C840,213,960,107,1080,96C1200,85,1320,171,1380,213.3L1440,256L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"
+        ></path>
+      </svg>
+    </section>
+    <!-- Akhir Jumbotron-->
+
+    <!-- About -->
+    <section id="about">
+      <div class="container">
+        <div class="row text-center mb-3">
+          <div class="col">
+            <h2>About Me</h2>
+          </div>
+        </div>
+        <div class="row justify-content-center fs-5 text-center">
+          <div class="col-md-4">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae quae blanditiis sint debitis consequatur praesentium enim non hic totam architecto.</p>
+          </div>
+          <div class="col">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis dignissimos tenetur accusantium nisi pariatur quibusdam incidunt quo quisquam vero culpa. Consectetur explicabo rerum similique commodi?</p>
+          </div>
+        </div>
+      </div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill=" #e2edff"
+          fill-opacity="1"
+          d="M0,0L60,21.3C120,43,240,85,360,85.3C480,85,600,43,720,69.3C840,96,960,192,1080,202.7C1200,213,1320,139,1380,101.3L1440,64L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"
+        ></path>
+      </svg>
+    </section>
+    <!-- Akhir About -->
+
+    <!-- Projects -->
+    <section id="projects">
+      <div class="container">
+        <div class="row text-center mb-3">
+          <div class="col">
+            <h2>My projects</h2>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-md-4 mb-3">
+            <div class="card">
+              <img src="img/projects/1.jpg" class="card-img-top" alt="projects 1" />
+              <div class="card-body">
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="card">
+              <img src="img/projects/2.jpg" class="card-img-top" alt="projects 2" />
+              <div class="card-body">
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="card">
+              <img src="img/projects/3.jpg" class="card-img-top" alt="projects 3" />
+              <div class="card-body">
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="card">
+              <img src="img/projects/4.jpg" class="card-img-top" alt="projects 4" />
+              <div class="card-body">
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="card">
+              <img src="img/projects/5.jpg" class="card-img-top" alt="projects 5" />
+              <div class="card-body">
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </div>
+            </div>
+          </div>
+      </div>   
+    </section>
+    <!-- Akhir Projects -->
+
+    <!-- Contact -->
+    <section id="contact">
+      <div class="container">
+        <div class="row text-center mb-2">
+          <div class="col">
+            <h2>Contact Me</h2>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-md-8">
+            <form>
+              <div class="mb-3">
+                <label for="name" class="form-label">Nama Lengkap</label>
+                <input type="text" class="form-control" id="name" aria-describedby="name" />
+              <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" aria-describedby="email" />
+              </div>
+              <div class="mb-3">
+                <label for="pesan" class="form-label">Pesan</label>
+                <textarea class="form-control" id="pesan" rows="3"></textarea>
+              </div> 
+             
+              
+              <button type="submit" class="btn btn-primary">kirim</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Akhir Contact -->
+
+    <!-- Footer -->
+    <footer class="bg-primary text-white text-center p-3">
+      <P>Created with <i class="bi bi-suit-heart-fill text-danger"></i> by <a href="https://www.instagram.com/Asep_oxs_199x/" class="text-white fw-bold">Saeful Amri</a></P>
+    </footer>
+    <!-- Akhir Footer -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  </body>
+</html>
